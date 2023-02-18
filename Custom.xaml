@@ -1,0 +1,114 @@
+﻿<!--图标-->
+<local:MyCard Title="PCL图标" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+        <StackPanel Margin="25,40,23,15">
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/CommandBlock.png"/>
+            <!-- 命令方块 -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Cobblestone.png"/>
+            <!-- 圆石 -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/GoldBlock.png"/>
+            <!-- 金块 -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Grass.png"/>
+            <!-- 草方块 -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/GrassPath.png"/>
+            <!-- 草径 -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Anvil.png"/>
+            <!-- 铁砧（zhen） -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/RedstoneBlock.png"/>
+            <!-- 红石块 -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/RedstoneLampOn.png"/>
+            <!-- 红石灯（亮） -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/RedstoneLampOff.png"/>
+            <!-- 红石灯（灭） -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Egg.png"/>
+            <!-- 鸡蛋 -->
+            <Image Width="50" Height="50" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Fabric.png"/>
+            <!-- 布料（Fabric 图标） -->
+        </StackPanel>
+    </local:MyCard>
+<!--网站快捷-->
+<local:MyCard Title="网站快捷区" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="https://raw.githubusercontent.com/rongjianuo/BetterForPCL2/main/images/minecraft.ico" Title="官网" Info="我的世界官网"
+                          EventType="打开网页" EventData ="https://www.minecraft.net/" Type="Clickable" />
+        <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="https://raw.githubusercontent.com/rongjianuo/BetterForPCL2/main/images/mcskin.cn.ico" Title="红石" Info="红石皮肤站"
+                          EventType="打开网页" EventData ="https://mcskin.cn/user" Type="Clickable" />
+        <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="https://raw.githubusercontent.com/rongjianuo/BetterForPCL2/main/images/mcbbs.net.ico" Title="论坛" Info="我的世界中文论坛"
+                          EventType="打开网页" EventData ="https://www.mcbbs.net/" Type="Clickable" />
+        <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="https://raw.githubusercontent.com/rongjianuo/BetterForPCL2/main/images/minecraft.fandom.com.ico" Title="WIKI" Info="MINECRAFT WIKI"
+                          EventType="打开网页" EventData ="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+<!--IKUN指令-->
+<local:MyCard Title="快捷指令" Margin="0,10,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+    <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="注：大多数@a可改为玩家名"/>
+    <local:MyCard Title="友好指令" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+        <StackPanel Margin="25,40,23,15">
+        <local:MyHint Text="注：可能会失去好朋友" />
+        <!--聊天框指令-->
+        <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="统统死亡" Info="把所有人噶了"
+                          EventType="复制文本" EventData ="/kill @a" Type="Clickable" />
+        <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="苦力怕来啦" Info="在每个玩家头顶召唤一只苦力怕"
+                          EventType="复制文本" EventData ="/execute as @a at @s run summon Creeper ~ ~2 ~" Type="Clickable" />
+        <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="TNT来啦" Info="在每个玩家头顶召唤一点TNT"
+                          EventType="复制文本" EventData ="/execute @a~ ~ ~ summon TNT" Type="Clickable" />
+        </StackPanel>
+    </local:MyCard>
+    <!--实用指令-->
+    <local:MyCard Title="实用指令" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+        <StackPanel Margin="25,40,23,15">
+         <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="出生点设置" Info="在你所在的位置设置出生点点"
+                          EventType="复制文本" EventData ="/setworldspawn" Type="Clickable" />
+         <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="死亡不掉落" Info="如果你噶了，身上的物品不会掉落"
+                          EventType="复制文本" EventData ="/gamerule keepinventory true" Type="Clickable" />
+         <!--游戏模式-->
+         <local:MyCard Title="游戏模式" Margin="0,10,0,15" CanSwap="True" IsSwaped="True">
+                <StackPanel Margin="25,40,23,15">
+                <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="生存模式" Info="所有人都是生存模式"
+                          EventType="复制文本" EventData ="/gamemode survival @a" Type="Clickable" />
+                <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="生存模式" Info="所有人都是创作模式"
+                          EventType="复制文本" EventData ="/gamemode creative @a" Type="Clickable" />
+                <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="冒险模式" Info="所有人都是冒险模式"
+                          EventType="复制文本" EventData ="/gamemode adventure @a" Type="Clickable" />
+                <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="旁观者模式" Info="所有人都是旁观者模式"
+                          EventType="复制文本" EventData ="/gamemode spectator @a" Type="Clickable" />
+                </StackPanel>
+         </local:MyCard>
+        </StackPanel>
+    </local:MyCard>
+    </StackPanel>
+</local:MyCard>
+<!--实用工具-->
+<local:MyCard Title="实用工具" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+        <StackPanel Margin="25,40,23,15">
+         <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="https://raw.githubusercontent.com/rongjianuo/BetterForPCL2/main/images/minecraft.ico" Title="基岩翻译" Info="打开基岩翻译客户端"
+                          EventType="打开文件" EventData =".\BeaterForPCL2\geyser\Geyser.jar" Type="Clickable" />
+         <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="https://raw.githubusercontent.com/rongjianuo/BetterForPCL2/main/images/PCL.ico" Title="清除日志" Info="清除没必要的日志"
+                          EventType="打开文件" EventData =".\Del_Log.exe" Type="Clickable" />
+         <local:MyListItem Margin="-5,15,-5,0"
+                          Logo="https://raw.githubusercontent.com/rongjianuo/BetterForPCL2/main/images/PCL.ico" Title="刷新主页" Info="刷新一下你的信息"
+                          EventType="刷新主页" Type="Clickable" />
+
+
+        </StackPanel>
+</local:MyCard>
+<!--水印-->
+<local:MyListItem Margin="-5,15,-5,0"
+                          Logo="https://raw.githubusercontent.com/rongjianuo/BetterForPCL2/main/images/afdian.net.ico" Title="赞助" Info="赞助一下吧，求求了" ToolTip="其实这就是个水印，但是还是赞助一下吧"
+                          EventType="打开网页" EventData ="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki" Type="Clickable" />
